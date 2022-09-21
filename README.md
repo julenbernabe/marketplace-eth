@@ -18,7 +18,7 @@ If it is your first time deploying the marketplace, run
 migrate --to 2
 ```
 
-Then, refer to the `marketplace.sol` file and change the token's contract address with the new one you obtained in the previous step. Once you do that, you can run
+Then, refer to the [marketplace.sol](https://github.com/julenbernabe/marketplace-eth/blob/main/contracts/marketplace.sol) file and change the token's contract address with the new one you obtained in the previous step. Once you do that, you can run
 
 ```bash
 migrate --from 3
