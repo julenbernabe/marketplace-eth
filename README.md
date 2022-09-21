@@ -8,18 +8,26 @@ This project contains all the files needed to deploy a Smart Contract for a Soli
 
 For a quick installation, run:
 
-`truffle develop`
+```bash
+truffle develop
+```
 
-Then, simply run:
+If it is your first time deploying the marketplace, run
 
-`migrate`
+```bash
+migrate --to 2
+```
 
-If it is your first time running these commands, you might get into trouble. If it is you case, firstly run
+Then, refer to the `marketplace.sol` file and change the token's contract address with the new one you obtained in the previous step. Once you do that, you can run
 
-`migrate --to 2`
-
-Then, refer to the file *subscribe.sol*, and change the token's contract address with the new one you obtained in the previous step. Once you do that, you can run
-
-`migrate --from 3`
+```bash
+migrate --from 3
+```
 
 and you are done!
+
+If you did the previous at least one time before, you already deployed the token's contract, so you can simply run
+
+```bash
+migrate
+```
