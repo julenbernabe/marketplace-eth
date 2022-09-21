@@ -4,7 +4,7 @@ This project contains all the files needed to deploy a Smart Contract for a Soli
 
 ## Installation
 
-**Observation:** For this installation, you will need to have [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/installation) installed.
+**Observation:** For the installation we will use [Truffle](https://www.trufflesuite.com/docs/truffle/getting-started/installation). Truffle is a tool to deploy and manage an Ethereum network consisting of a single node, and it is usually been used for testing purposes.
 
 For a quick installation, run:
 
