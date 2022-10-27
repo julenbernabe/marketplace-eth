@@ -304,11 +304,11 @@ contract marketplace {
         }
     }
 
-    function scientistReady(address[] calldata elected_players, string calldata BC_hash, string calldata SCH_hash, uint i, uint actual_payment) external {
+    function scientistReady(address[] calldata elected_players, string calldata BC_hash, string calldata SCH_hash, uint i) external {
         CampaignData storage NewProg = Prog[i];
         require(NewProg.CampaignState == StateType.ModelUpload, "You cannot call this function at this moment.");
         require(msg.sender == NewProg.Players[0].account, "You are not who made the request for this operation.");
-        NewProg.tokensPerItem = actual_payment;
+        NewProg.tokensPerItem = NewProg.payment / NewProg.current_data;
         NewProg.n_players = elected_players.length;
         for (uint j = 0; j < NewProg.n_players; j++) {
             NewProg.elected[elected_players[j]] = 1;
